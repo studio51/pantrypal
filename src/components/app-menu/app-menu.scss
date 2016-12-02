@@ -1,0 +1,30 @@
+app-menu {
+
+  .app-tabs {
+    background-color: #fafafa;
+
+    ion-buttons {
+      display: flex;
+      margin: 0;
+
+      button {
+        margin: 16px 0;
+
+        &:not([icon-only]) {
+          .button-inner {
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            color: #999;
+            font-size: .7em;
+            font-weight: 400;
+
+            img { margin-bottom: 8px; }
+          }
+        }
+
+        &:nth-child(odd) { flex: 1; }
+      }
+    }
+  }
+}
